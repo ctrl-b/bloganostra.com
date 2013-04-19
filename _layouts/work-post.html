@@ -1,0 +1,20 @@
+{% include head.html %}
+	<div class="row">
+		<div class="large-9 columns">
+			<article class="space-uno">
+				<H1 class="{{ page.categories }}-text-color"><span class="{{ page.categories }}-background">{{ page.categories }}</span> {{ page.title}}</H1>
+				<img src="{{ site.big }}{{ page.img }}" alt="{{ page.title }}" class="work {{ page.categories }}">
+			</article>
+			<div class="desc">
+				<span><b>logiciel:</b> {{ page.logiciel }}</span><br>
+				<span><b>type:</b> {{ page.type }}</span>
+				{{ content }}
+			</div>
+			{% include nextprev.html %}
+		</div>
+		<div class="large-3 columns">
+			{% include menu.html %}
+		</div>
+	</div>
+	{% include scripts.html %}
+{% include foot.html %}

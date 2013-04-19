@@ -1,0 +1,21 @@
+
+<div id="ubicate">:{{ page.category }}</div>
+<h3>{{ page.title }}</h3>
+<ul class="large-block-grid-2">
+	{% for post in paginator.posts %}
+		<li>
+			<article class="background space-uno">
+				<!--div class="{{ post.categories }}-background">
+					<span>{{ post.title}}</span>
+				</div-->
+				<div class="tipo {{ post.categories }}-background">{{ post.title}}</div>
+					<a class="fx-fade" href="{{ post.url }}">
+						<img src="{{ site.thumb }}{{ post.img }}" alt="{{ post.title }}" class="{{ post.categories }}">
+					</a>
+			</article>
+		</li>
+	{% endfor %}
+</ul>
+{% if page.paginate == true %}
+	{{ paginator | pager_links }}
+{% endif %}

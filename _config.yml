@@ -1,0 +1,16 @@
+safe: false
+auto: true
+server: true
+markdown: rdiscount
+pygments: true
+description: "UX Spécialiste Portfolio, Flows, Sitemaps et Wireframes"
+main_title: " | Ulises Rojas"
+twitter: "usrix"
+trackingID: "UA-27464657-1"
+permalink: /:categories/:title/
+thumb: "/img/thumbs/"
+big: "/img/big/"
+pagination: true
+paginate: 4
+destination: /Users/ulises/Documents/toStage/usrix.github.com/
+exclude: [config.rb, humans.txt, MIT-LICENSE.txt]
