@@ -6,6 +6,7 @@ pygments: true
 description: "UX Spécialiste Portfolio, Flows, Sitemaps et Wireframes"
 main_title: " | Ulises Rojas"
 twitter: "usrix"
+linkedin: "ulisesrojas/fr"
 trackingID: "UA-27464657-1"
 permalink: /:categories/:title/
 thumb: "/img/thumbs/"
